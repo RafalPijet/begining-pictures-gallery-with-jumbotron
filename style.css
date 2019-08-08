@@ -1,0 +1,110 @@
+* {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+body {
+    margin: auto;
+    background-color: #000000;
+}
+
+a {
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.jumbotron {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background: url(https://monsterlegacy.files.wordpress.com/2016/09/bigtroublewildmansnarl.jpg) top no-repeat;
+    box-sizing: border-box;
+}
+
+.jumbotron h1 {
+    position: absolute;
+    top: calc(100vh / 8);
+    left: calc(100vw / 2 - 200px);
+    font-size: 72px;
+    color: #ffffff;
+    text-shadow: 12px 12px 15px #000;
+    opacity: .9;
+    animation: fearTitle .7s infinite;
+}
+
+.jumbotron button {
+    position: absolute;
+    width: 200px;
+    height: 70px;
+    top: calc(100vh / 2);
+    left: calc(100vw / 2 - 100px);
+    background-color: #801515;
+    border: none;
+    border-radius: 20px;
+    text-shadow: 5px 5px 5px #000;
+    animation: fearButton .7s infinite;
+}
+
+.jumbotron button:hover {
+    background-color: #d46a6a;
+}
+
+.jumbotron button:active {
+    background-color: #ffaaaa;
+}
+
+.gallery > img {
+    float: left;
+    width: 25%;
+    height: 300px;
+    transition-duration: 1.5s;
+}
+
+.gallery > img:hover {
+    filter: brightness(200%);
+}
+
+.gallery div:first-child {
+    height: 500px;
+}
+
+.beginingOfHell {
+    width: 100%;
+}
+
+@keyframes fearTitle {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.25) translate(3px, 5px);
+    }
+    50% {
+        transform: scale(1.5) translate(-5px, -10px);
+    }
+    75% {
+        transform: scale(1.75) translate(3px, 5px);
+    }
+    100% {
+        transform: scale(2) translate(5px,  3px);
+    }
+}
+
+@keyframes fearButton {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(3px, 5px);
+    }
+    50% {
+        transform: translate(-5px, -10px);
+    }
+    75% {
+        transform: translate(3px, 5px);
+    }
+    100% {
+        transform: translate(5px,  3px);
+    }
+}
